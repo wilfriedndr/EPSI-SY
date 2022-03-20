@@ -24,7 +24,7 @@ Pour tout code C++ pour une Arduino UNO il y a 2 fonctions principales qui fonct
 - **[void loop() {}](https://www.arduino.cc/en/reference/loop)**
   Après la création d'une fonction setup(), la fonction loop() va exécuter en boucle le code contenu dans celle-ci.
 
-```
+```C++
 #include <Arduino.h>
 
 void setup() {
@@ -47,7 +47,7 @@ Assigne une valeur `LOW` ou `HIGH` à un pin digital.
 - **[delay()](https://www.arduino.cc/en/reference/delay)**
   Met en pause la totalité de l'exécution du programme (l'unité du paramètre de la fonction est en milliseconds). 
 
-```
+```C++
 #include <Arduino.h>
 
 void setup() {
@@ -93,7 +93,7 @@ Initialisation d'une variable `LED_MASK` qui prend comme paramètre la mise à 1
 - **void loop()**
   Exécute en boucle le changement d'état du registre `TCCR1B`.
 
-```
+```C++
 #include <Arduino.h>
 #define LED 13
 #define LED_MASK (1 << 5)
@@ -162,7 +162,7 @@ Dans ce deuxième TP nous avons travaillé sur un capteur de température nommé
 - **void dht22_receive_ack()**
   Tant que aucune donnée n'est récupérée par le capteur alors la fonction [micros()](https://www.arduino.cc/reference/en/language/functions/time/micros/) s'exécutera
 
-```
+```C++
 #include <Arduino.h>
 
 void dht22_send_start(){
